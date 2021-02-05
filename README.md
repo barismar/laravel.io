@@ -32,10 +32,10 @@ We'd like to thank these **amazing companies** for sponsoring us. If you are int
 
 The following tools are required in order to start the installation.
 
+- PHP >=7.4
 - [Composer](https://getcomposer.org/download/)
 - [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - [Valet](https://laravel.com/docs/valet#installation)
-- PHP >=7.4
 
 ## Installation
 
@@ -96,6 +96,14 @@ TWITTER_ACCESS_SECRET=
 ```
 
 Approved articles are shared in the order they were submitted for approval. Articles are shared twice per day at 14:00 and 18:00 UTC. Once an article has been shared, it will not be shared again.
+
+## Commands
+
+Command | Description
+--- | ---
+**`php artisan test --parallel`** | Run the tests
+`php artisan migrate:fresh --seed` | Reset the database
+`npm run watch` | Watch for changes in CSS and JS files
 
 ## Maintainers
 

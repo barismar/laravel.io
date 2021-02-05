@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\User;
+use App\Models\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Facades\Auth;
 
@@ -129,7 +129,7 @@ class SettingsTest extends BrowserKitTestCase
             ->seePageIs('/settings')
             ->dontSee('freektwitter');
 
-        $this->assertNull($user->fresh()->twitter());
+        $this->assertEmpty($user->fresh()->twitter());
     }
 
     private function assertPasswordWasHashedAndSaved(): void
